@@ -1,0 +1,24 @@
+---
+// Visible FAQ section. The matching FAQ JSON-LD is emitted by ArticleLayout
+// so the structured-data and the rendered DOM stay in sync — same source array.
+
+interface Props {
+  faqs: { question: string; answer: string }[];
+}
+
+const { faqs } = Astro.props;
+---
+
+{faqs && faqs.length > 0 && (
+  <section class="faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Frequently asked questions</h2>
+    <dl>
+      {faqs.map((f) => (
+        <div class="faq-item">
+          <dt>{f.question}</dt>
+          <dd>{f.answer}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+)}

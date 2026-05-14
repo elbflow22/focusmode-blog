@@ -1,0 +1,20 @@
+---
+// The Quick Answer block. Section 3 of the build spec calls this "the single
+// highest-leverage element" — it's what AI engines lift verbatim and what
+// Google pulls into featured snippets.
+//
+// The frontmatter schema validates the length. This component renders it as
+// a structural slot at the top of every article so the format can't be
+// skipped or buried by a fast-written post.
+
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<aside class="quick-answer" aria-label="Quick answer">
+  <p class="quick-answer-label">Quick answer</p>
+  <p class="quick-answer-text">{text}</p>
+</aside>

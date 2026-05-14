@@ -1,0 +1,81 @@
+---
+// The <head> block every page renders. Centralised so a missing meta tag
+// can't slip through on a single page — common failure mode for hand-built
+// templates. Each prop is required-or-defaulted; canonical URL is always set.
+
+import { SITE } from '~/consts';
+import '~/styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalURL: string;
+  ogImage?: string;
+  /** Article-specific meta (og:type = article). Omit for non-article pages. */
+  article?: {
+    publishedTime: string; // ISO
+    modifiedTime: string;  // ISO
+    author: string;
+  };
+}
+
+const { title, description, canonicalURL, ogImage, article } = Astro.props;
+
+const ogImageUrl = ogImage
+  ? new URL(ogImage, SITE.url).toString()
+  : new URL('/og/default.png', SITE.url).toString();
+
+const ogType = article ? 'article' : 'website';
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="dark" />
+<meta name="theme-color" content="#0E0E10" />
+<meta name="generator" content={Astro.generator} />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalURL} />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<!-- Favicon. Replace with a real raster when available. -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<!-- Fonts (DM Serif Display / DM Sans / DM Mono). Loaded with preconnect
+     and font-display:swap so they don't block first paint. -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap"
+/>
+
+<!-- Open Graph -->
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content={SITE.title} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:locale" content={SITE.locale} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+{article && (
+  <>
+    <meta property="article:published_time" content={article.publishedTime} />
+    <meta property="article:modified_time" content={article.modifiedTime} />
+    <meta property="article:author" content={article.author} />
+  </>
+)}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />
+
+<!-- RSS / sitemap discovery -->
+<link rel="alternate" type="application/rss+xml" title={SITE.title} href={new URL('/rss.xml', SITE.url).toString()} />
+<link rel="sitemap" href="/sitemap-index.xml" />

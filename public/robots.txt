@@ -1,0 +1,104 @@
+# robots.txt for blog.focusmode.one
+#
+# Intent: explicitly allow major AI crawlers in addition to search engines.
+# The whole AEO strategy depends on these bots being able to fetch, index,
+# and cite the content. Default for the listed crawlers is to respect what
+# this file says — opting out happens by omission elsewhere on the web; we
+# opt in deliberately. Review periodically: the bot list churns.
+
+User-agent: *
+Allow: /
+
+# --- AI crawlers (citation + training) -------------------------------------
+
+# OpenAI (ChatGPT search and training)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Google (separate AI training opt-in; Googlebot covers regular search)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft / Bing (Copilot feeds off Bingbot)
+User-agent: Bingbot
+Allow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckAssistBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# Common Crawl (feeds many open-source models)
+User-agent: CCBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# DeepSeek
+User-agent: DeepSeekBot
+Allow: /
+
+# Bytedance (TikTok / Doubao)
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://blog.focusmode.one/sitemap-index.xml

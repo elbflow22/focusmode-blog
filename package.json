@@ -1,0 +1,20 @@
+{
+  "name": "focusmode-blog",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Focus Mode One — blog. Compounding SEO/AEO asset for FM1.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^6.3.2",
+    "@astrojs/mdx": "^5.0.5",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2"
+  }
+}

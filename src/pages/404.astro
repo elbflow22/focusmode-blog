@@ -1,0 +1,16 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { absoluteUrl } from '~/lib/url';
+---
+
+<BaseLayout
+  title="Not found — Focus Mode One Blog"
+  description="That page doesn't exist on the Focus Mode One blog. Head back to the index for the latest articles on focused planning in quarters, weeks, and days."
+  canonicalURL={absoluteUrl('/404')}
+>
+  <section class="container not-found">
+    <p class="kicker">404</p>
+    <h1>That page doesn't exist.</h1>
+    <p class="lede">It may have moved or never existed. <a href="/">Back to all posts →</a></p>
+  </section>
+</BaseLayout>

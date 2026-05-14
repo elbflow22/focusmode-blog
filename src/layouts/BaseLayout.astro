@@ -1,0 +1,52 @@
+---
+import BaseHead from '~/components/BaseHead.astro';
+import Header from '~/components/Header.astro';
+import Footer from '~/components/Footer.astro';
+import JsonLd from '~/components/JsonLd.astro';
+import { organizationJsonLd, personJsonLd, websiteJsonLd } from '~/lib/jsonld';
+import { SITE } from '~/consts';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalURL: string;
+  ogImage?: string;
+  article?: {
+    publishedTime: string;
+    modifiedTime: string;
+    author: string;
+  };
+  /** Page-specific JSON-LD (Article, FAQ, Breadcrumb…) emitted after the
+   *  always-on Organization / Person / WebSite entities. */
+  extraJsonLd?: object[];
+}
+
+const { title, description, canonicalURL, ogImage, article, extraJsonLd = [] } = Astro.props;
+
+// Organisation / Person / WebSite are anchored on every page. AI engines
+// build their entity graph by seeing the same @id across many pages — this
+// is what makes Pascal-as-founder and FM1-as-organisation legible.
+const alwaysOn = [organizationJsonLd(), personJsonLd(), websiteJsonLd()];
+---
+
+<!doctype html>
+<html lang={SITE.language}>
+  <head>
+    <BaseHead
+      title={title}
+      description={description}
+      canonicalURL={canonicalURL}
+      ogImage={ogImage}
+      article={article}
+    />
+    <JsonLd data={alwaysOn} />
+    {extraJsonLd.map((d) => <JsonLd data={d} />)}
+  </head>
+  <body>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

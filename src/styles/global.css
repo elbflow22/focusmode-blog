@@ -1,0 +1,394 @@
+/* FM1 dark theme. Palette and type stack are the FM1 design system —
+   shared across the iOS app, the legal site, and (now) the blog. The
+   constants below should match focusmode-legal/assets/styles.css; if they
+   drift, the brand drifts. */
+
+:root {
+  --bg: #0E0E10;
+  --bg-elev: #18181C;
+  --bg-card: #222228;
+  --fg: #F0EFE8;
+  --fg-muted: #8E8E9E;
+  --fg-dim: #5A5A6E;
+  --violet: #8840FF;
+  --violet-soft: #b487ff;
+  --blue: #2575F0;
+  --orange: #FF8C42;
+  --border: rgba(255, 255, 255, 0.08);
+
+  --serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  --sans: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --measure: 68ch;
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--violet-soft);
+  text-decoration-color: rgba(180, 135, 255, 0.4);
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--fg); text-decoration-color: var(--fg); }
+
+img { max-width: 100%; height: auto; display: block; }
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Header / Footer ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+  background: rgba(14, 14, 16, 0.85);
+  backdrop-filter: blur(8px);
+  position: sticky; top: 0; z-index: 10;
+}
+.site-header .container {
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 500;
+}
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: var(--violet);
+  color: white;
+  font-family: var(--serif);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.brand-name {
+  font-family: var(--sans);
+  font-size: 15px;
+}
+.site-header nav {
+  display: flex; gap: 20px;
+  font-size: 14px;
+}
+.site-header nav a {
+  color: var(--fg-muted);
+  text-decoration: none;
+}
+.site-header nav a:hover { color: var(--fg); }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 0 64px;
+  margin-top: 80px;
+  color: var(--fg-muted);
+  font-size: 14px;
+}
+.site-footer .container { max-width: 1080px; }
+.site-footer p { margin: 4px 0; }
+.site-footer .meta a { color: var(--fg-muted); }
+.site-footer .meta span { margin: 0 8px; color: var(--fg-dim); }
+
+/* ---------- Home ---------- */
+
+.hero-home {
+  padding: 72px 24px 32px;
+}
+.hero-home h1 {
+  font-family: var(--serif);
+  font-size: clamp(36px, 6vw, 56px);
+  line-height: 1.1;
+  margin: 8px 0 16px;
+}
+.hero-home .kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  font-family: var(--mono);
+  color: var(--violet-soft);
+  margin: 0;
+}
+.hero-home .lede {
+  font-size: 19px;
+  color: var(--fg-muted);
+  max-width: var(--measure);
+}
+
+.post-list {
+  padding-bottom: 64px;
+}
+.post-list ul { list-style: none; padding: 0; margin: 0; }
+.post-list-item {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+}
+.post-list-item:last-child { border-bottom: 1px solid var(--border); }
+.post-list-item a {
+  display: block;
+  color: var(--fg);
+  text-decoration: none;
+}
+.post-list-item a:hover h2 { color: var(--violet-soft); }
+.post-list-item h2 {
+  font-family: var(--serif);
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+.post-list-item .excerpt {
+  color: var(--fg-muted);
+  margin: 0 0 8px;
+  max-width: var(--measure);
+}
+.post-list-item .meta {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--fg-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+.post-list-item .meta span { margin: 0 6px; }
+.post-list .empty {
+  color: var(--fg-muted);
+  padding: 32px 0;
+}
+
+/* ---------- Article ---------- */
+
+.article-header {
+  padding: 48px 24px 24px;
+}
+.article-header .kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  font-family: var(--mono);
+  color: var(--violet-soft);
+  margin: 0 0 8px;
+}
+.article-header h1 {
+  font-family: var(--serif);
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+.article-header .lede {
+  font-size: 19px;
+  color: var(--fg-muted);
+  max-width: var(--measure);
+  margin: 0 0 16px;
+}
+.article-header .byline {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--fg-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+
+.hero {
+  margin: 24px auto 32px;
+  max-width: 1080px;
+  padding: 0;
+}
+.hero img {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* Quick Answer — the highest-leverage block. Visual prominence matches
+   its role; AI engines lift this verbatim. Don't bury it. */
+.quick-answer {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--violet);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 32px 0 40px;
+}
+.quick-answer-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--violet-soft);
+  margin: 0 0 8px;
+}
+.quick-answer-text {
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--fg);
+  margin: 0;
+}
+
+/* Article prose — content typography. Max-width caps reading line length. */
+.prose {
+  max-width: var(--measure);
+}
+.prose > * + * { margin-top: 1.2em; }
+.prose h2 {
+  font-family: var(--serif);
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 2.2em;
+  margin-bottom: 0.4em;
+}
+.prose h3 {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 1.8em;
+  margin-bottom: 0.3em;
+}
+.prose p { margin: 0; }
+.prose a {
+  color: var(--violet-soft);
+  text-decoration-color: rgba(180, 135, 255, 0.4);
+}
+.prose ul, .prose ol { padding-left: 1.4em; }
+.prose li + li { margin-top: 0.3em; }
+.prose blockquote {
+  border-left: 3px solid var(--violet);
+  margin: 0;
+  padding: 4px 0 4px 18px;
+  color: var(--fg-muted);
+  font-style: italic;
+}
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.92em;
+  background: var(--bg-elev);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.prose pre {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+.prose pre code { background: none; padding: 0; }
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2.5em 0;
+}
+.prose img {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin: 1.4em 0;
+}
+
+/* FAQ */
+.faq {
+  margin: 64px 0 32px;
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+}
+.faq h2 {
+  font-family: var(--serif);
+  font-size: 28px;
+  margin: 0 0 24px;
+}
+.faq dl { margin: 0; }
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+}
+.faq-item:first-child { border-top: 1px solid var(--border); }
+.faq-item dt {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--fg);
+}
+.faq-item dd {
+  margin: 0;
+  color: var(--fg-muted);
+}
+
+/* Related */
+.related {
+  margin: 48px 0;
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+}
+.related h2 {
+  font-family: var(--serif);
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+.related ul { list-style: none; padding: 0; margin: 0; }
+.related li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+.related li a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--fg);
+}
+.related li a:hover { color: var(--violet-soft); }
+.related .meta {
+  display: block;
+  color: var(--fg-muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* 404 */
+.not-found {
+  padding: 96px 24px;
+  text-align: left;
+}
+.not-found .kicker {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--violet-soft);
+}
+.not-found h1 {
+  font-family: var(--serif);
+  font-size: 48px;
+  margin: 8px 0 16px;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .article-header h1 { font-size: 30px; }
+  .post-list-item h2 { font-size: 22px; }
+  .quick-answer { padding: 16px 18px; margin: 24px 0 32px; }
+}

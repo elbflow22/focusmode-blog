@@ -1,0 +1,122 @@
+---
+// The article template. Every post inherits this. If you want to change the
+// structure of all articles, change this file — that's the spec's "single
+// most important file" requirement (§2).
+//
+// Structural slots (non-negotiable per §3):
+//   1. Quick Answer block at the top
+//   2. H2 headings phrased as questions (writer discipline, not enforceable here)
+//   3. FAQ section with FAQ schema
+//   4. Related-articles block (internal linking)
+//
+// Emits Article + FAQ + Breadcrumb JSON-LD on top of the always-on entities
+// from BaseLayout.
+
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import QuickAnswer from '~/components/QuickAnswer.astro';
+import Faq from '~/components/Faq.astro';
+import FormattedDate from '~/components/FormattedDate.astro';
+import { postUrl, absoluteUrl } from '~/lib/url';
+import { articleJsonLd, faqJsonLd, breadcrumbJsonLd } from '~/lib/jsonld';
+import { SITE, AUTHOR } from '~/consts';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+  /** Word count of the rendered body. Computed in [slug].astro after render. */
+  wordCount?: number;
+  /** Related-post entries by slug match against post.data.related. */
+  related?: CollectionEntry<'posts'>[];
+}
+
+const { post, wordCount, related = [] } = Astro.props;
+const { data } = post;
+
+const canonical = data.canonicalURL || postUrl(post.id);
+const heroSrc = data.heroImage?.src;
+
+const extraJsonLd: object[] = [
+  articleJsonLd({
+    slug: post.id,
+    title: data.title,
+    description: data.description,
+    pubDate: data.pubDate,
+    updatedDate: data.updatedDate,
+    canonicalURL: canonical,
+    image: heroSrc,
+    targetQuery: data.targetQuery,
+    wordCount,
+  }),
+  breadcrumbJsonLd([
+    { name: 'Blog', url: SITE.url + '/' },
+    { name: 'Posts', url: SITE.url + '/' },
+    { name: data.title, url: canonical },
+  ]),
+];
+
+if (data.faqs && data.faqs.length > 0) {
+  extraJsonLd.push(faqJsonLd(data.faqs));
+}
+---
+
+<BaseLayout
+  title={data.title}
+  description={data.description}
+  canonicalURL={canonical}
+  ogImage={heroSrc ? absoluteUrl(heroSrc) : undefined}
+  article={{
+    publishedTime: data.pubDate.toISOString(),
+    modifiedTime: (data.updatedDate ?? data.pubDate).toISOString(),
+    author: AUTHOR.name,
+  }}
+  extraJsonLd={extraJsonLd}
+>
+  <article class="article">
+    <header class="article-header container">
+      <p class="kicker">Focus Mode One — Blog</p>
+      <h1>{data.title}</h1>
+      <p class="lede">{data.excerpt}</p>
+      <p class="byline">
+        <span>By {AUTHOR.name}</span>
+        <span aria-hidden="true">·</span>
+        <FormattedDate date={data.pubDate} />
+        {data.updatedDate && (
+          <>
+            <span aria-hidden="true">·</span>
+            <span>Updated <FormattedDate date={data.updatedDate} /></span>
+          </>
+        )}
+      </p>
+    </header>
+
+    {heroSrc && (
+      <figure class="hero container">
+        <img src={heroSrc} alt={data.heroImageAlt ?? ''} loading="eager" decoding="async" />
+      </figure>
+    )}
+
+    <div class="container">
+      <QuickAnswer text={data.quickAnswer} />
+
+      <div class="prose">
+        <slot />
+      </div>
+
+      {data.faqs && data.faqs.length > 0 && <Faq faqs={data.faqs} />}
+
+      {related.length > 0 && (
+        <section class="related" aria-labelledby="related-heading">
+          <h2 id="related-heading">Related reading</h2>
+          <ul>
+            {related.map((r) => (
+              <li>
+                <a href={postUrl(r.id)}>{r.data.title}</a>
+                <span class="meta">{r.data.excerpt}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </div>
+  </article>
+</BaseLayout>

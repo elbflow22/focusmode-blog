@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import FormattedDate from '~/components/FormattedDate.astro';
+import { SITE } from '~/consts';
+import { postUrl, absoluteUrl } from '~/lib/url';
+
+const posts = (await getCollection('posts', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title={SITE.title}
+  description={SITE.description}
+  canonicalURL={absoluteUrl('/')}
+>
+  <section class="hero-home container">
+    <p class="kicker">Focus Mode One — Blog</p>
+    <h1>Focused planning, written down.</h1>
+    <p class="lede">
+      Articles on planning in quarters, weeks, and days — written by Pascal, the founder of <a href="https://focusmode.one">Focus Mode One</a>. The opposite of a to-do list.
+    </p>
+  </section>
+
+  <section class="post-list container" aria-label="All posts">
+    {posts.length === 0 && (
+      <p class="empty">No posts yet. The first one is on the way.</p>
+    )}
+    <ul>
+      {posts.map((p) => (
+        <li class="post-list-item">
+          <a href={postUrl(p.id)}>
+            <h2>{p.data.title}</h2>
+            <p class="excerpt">{p.data.excerpt}</p>
+            <p class="meta">
+              <FormattedDate date={p.data.pubDate} />
+              <span aria-hidden="true">·</span>
+              <span>{p.data.targetQuery}</span>
+            </p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
