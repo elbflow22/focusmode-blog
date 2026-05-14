@@ -103,7 +103,7 @@ GitHub Pages, same as `focusmode-legal`:
 - **Analytics.** Wire in privacy-respecting analytics (Plausible, Fathom, or self-hosted Umami) before the first article gets traffic. Add the snippet in `BaseHead.astro`.
 - **Email capture.** Static-blog limitation; add later if a newsletter becomes a priority (§7 of the spec).
 - **Real OG images.** Drop `fm1-logo.png` (the publisher logo for Organization JSON-LD) and `default.png` (1200×630, the OG fallback) into `public/og/`. Per-article hero images are picked up automatically from frontmatter.
-- **`sameAs` URLs for Org and Author.** Fill these into `src/consts.ts` once the LinkedIn / X / App Store links exist — they meaningfully strengthen the entity graph.
+- **`sameAs` URLs for Org and Author.** Fill these into `src/consts.ts` once the LinkedIn / X / App Store / Play Store links exist — they meaningfully strengthen the entity graph.
 
 ## Maintenance
 

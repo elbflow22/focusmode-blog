@@ -24,7 +24,7 @@ export const GET: APIRoute = async () => {
 
   lines.push('## About');
   lines.push('');
-  lines.push(`- [Focus Mode One](${ORG.url}): the iOS app for focused planning in quarters, weeks, and days.`);
+  lines.push(`- [Focus Mode One](${ORG.url}): the app for focused planning in quarters, weeks, and days.`);
   lines.push('');
 
   if (posts.length > 0) {

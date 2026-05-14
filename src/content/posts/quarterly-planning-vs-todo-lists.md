@@ -32,7 +32,7 @@ But notice what the list doesn't tell you. It doesn't tell you which item matter
 
 Quarterly planning optimises for *direction*. The unit is a theme — one or two things you intend to move forward over thirteen weeks — and the work is to keep your weeks honest about it.
 
-A theme isn't a goal in the OKR sense. It doesn't have a numeric target, and you don't grade it. It's closer to a beam of attention. "This quarter, I'm pushing the iOS app to v1." "This quarter, I'm rebuilding my sleep." "This quarter, I'm hiring a designer." A handful of words that decide, in advance, what your weeks are about.
+A theme isn't a goal in the OKR sense. It doesn't have a numeric target, and you don't grade it. It's closer to a beam of attention. "This quarter, I'm pushing the app to v1." "This quarter, I'm rebuilding my sleep." "This quarter, I'm hiring a designer." A handful of words that decide, in advance, what your weeks are about.
 
 The leverage isn't in the theme itself. It's in the contrast. When a week pulls you toward something off-theme, you notice immediately. When a task earns a slot on a Tuesday because it advances the theme, the choice has weight that a flat to-do list can't give it.
 
