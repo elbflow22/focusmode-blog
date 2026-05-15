@@ -308,6 +308,52 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 1.4em 0;
 }
 
+/* App CTA — appears after every article body, before FAQ + Related.
+   Cross-link from blog to landing; mirrors the rituals→blog link on the
+   landing side. */
+.app-cta {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 48px 0 16px;
+  padding: 24px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--violet);
+  border-radius: var(--radius);
+}
+.app-cta__copy { flex: 1; min-width: 240px; }
+.app-cta__kicker {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--violet-soft);
+  margin: 0 0 6px;
+}
+.app-cta__line {
+  color: var(--fg-muted);
+  font-size: 15px;
+  margin: 0;
+}
+.app-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--violet);
+  color: var(--bg);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+.app-cta__btn:hover { background: var(--violet-soft); color: var(--bg); }
+
 /* FAQ */
 .faq {
   margin: 64px 0 32px;

@@ -104,6 +104,21 @@ if (data.faqs && data.faqs.length > 0) {
 
       {data.faqs && data.faqs.length > 0 && <Faq faqs={data.faqs} />}
 
+      <!-- Cross-link to the landing. Appears at the end of every article —
+           the "now download the thing the article is about" moment.
+           Mirrors the landing's pattern of linking out to the blog. -->
+      <aside class="app-cta" aria-label="Get the app">
+        <div class="app-cta__copy">
+          <p class="app-cta__kicker">Focus Mode One</p>
+          <p class="app-cta__line">
+            The app this article is about — three horizons (quarter, week, today) in one view, with the wizards that build the link for you.
+          </p>
+        </div>
+        <a class="app-cta__btn" href="https://focusmode.one" rel="noopener">
+          Get the app &rarr;
+        </a>
+      </aside>
+
       {related.length > 0 && (
         <section class="related" aria-labelledby="related-heading">
           <h2 id="related-heading">Related reading</h2>
