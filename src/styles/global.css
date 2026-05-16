@@ -77,9 +77,11 @@ img { max-width: 100%; height: auto; display: block; }
   text-decoration: none;
   font-weight: 500;
 }
-/* Brand mark is now the real FM logo image (was a CSS "FM" letterform).
-   Width/height set inline by the <Image> tag; rule below covers display
-   sizing in case the Image attrs are ever swapped for a plain <img>. */
+/* Brand mark is the real FM logo image (was a CSS "FM" letterform).
+   Source PNG is 1080x1185 — slightly non-square. We pass only `width`
+   to Astro's <Image> so sharp doesn't center-crop to a square (which
+   was clipping the mark's edges). object-fit: contain caps the
+   displayed size to a 28×28 box with at most ~1px of letterbox. */
 .brand-mark {
   width: 28px;
   height: 28px;
