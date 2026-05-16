@@ -85,6 +85,9 @@ img { max-width: 100%; height: auto; display: block; }
 .brand-mark {
   width: 28px;
   height: 28px;
+  box-sizing: border-box;
+  padding: 2px;          /* gives the mark room inside the rounded corners — */
+                         /* without this, border-radius clips the FM mark itself */
   border-radius: 7px;
   display: inline-block;
   object-fit: contain;
