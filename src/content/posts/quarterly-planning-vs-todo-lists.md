@@ -13,7 +13,10 @@ faqs:
     answer: "OKRs are an organisational tool — they coordinate teams around shared outcomes. Quarterly planning here is the personal-scale version: one or two themes, picked by you, that you intend to push forward over thirteen weeks. No cascading, no committee, no scoring at the end. The point is alignment between your weeks and a destination you actually chose."
   - question: "What about urgent things that don't fit a quarterly theme?"
     answer: "They still happen — quarterly planning doesn't replace a daily list, it sits above it. Focus Mode One's structure is explicit about this: the quarter sets the direction, the week translates it into focus areas, and the day still holds whatever needs to happen today. Each level answers a different question."
-related: []
+related:
+  - three-planning-horizons-quarter-week-day
+  - why-todo-lists-lie
+  - how-to-plan-a-quarter-in-10-minutes
 ---
 
 Most productivity advice argues over the wrong question. "Which app should I use for my tasks?" assumes the unit of planning is the task. For a meaningful amount of the work that actually matters — shipping a product, learning a craft, changing a habit — the task is the wrong unit. It's too small. By the time something is on a to-do list, the interesting decisions have already been made.
