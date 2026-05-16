@@ -1,11 +1,13 @@
 ---
+import { Image } from 'astro:assets';
 import { SITE } from '~/consts';
+import fmLogo from '~/assets/fm1-logo.png';
 ---
 
 <header class="site-header">
   <div class="container">
     <a class="brand" href="/">
-      <span class="brand-mark" aria-hidden="true">FM</span>
+      <Image src={fmLogo} alt="" width={56} height={56} class="brand-mark" loading="eager" />
       <span class="brand-name">{SITE.title}</span>
     </a>
     <nav aria-label="Primary">

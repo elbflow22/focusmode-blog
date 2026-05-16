@@ -77,16 +77,16 @@ img { max-width: 100%; height: auto; display: block; }
   text-decoration: none;
   font-weight: 500;
 }
+/* Brand mark is now the real FM logo image (was a CSS "FM" letterform).
+   Width/height set inline by the <Image> tag; rule below covers display
+   sizing in case the Image attrs are ever swapped for a plain <img>. */
 .brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 28px; height: 28px;
-  border-radius: 8px;
-  background: var(--violet);
-  color: white;
-  font-family: var(--serif);
-  font-size: 13px;
-  letter-spacing: 0.02em;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  display: inline-block;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .brand-name {
   font-family: var(--sans);
