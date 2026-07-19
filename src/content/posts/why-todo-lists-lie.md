@@ -44,6 +44,8 @@ Look at a productive person's to-do list app at the end of a great week. There's
 
 A planning surface, not a list. A planning surface starts with a question: where is this week going, and why? It answers with a small number of things that earn their slot because they advance something larger. The slots have weight because the level above gave them weight.
 
+Focus Mode One calls the top-to-bottom link between quarter, week, and day **the Cascade** — every day item traces back to a week focus area, every week area to a quarter objective. That trace is what makes a slot heavy. A to-do list has no equivalent.
+
 The list still exists. It catches the residue — the calls, the errands, the admin. But it's no longer the primary planning surface. It's the secondary one. The one you check after you've answered the directional question.
 
 ## How does Focus Mode One handle the split?

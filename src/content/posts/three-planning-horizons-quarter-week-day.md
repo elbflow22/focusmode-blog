@@ -30,6 +30,8 @@ A planning horizon is a time window with its own job. Three horizons cover the w
 
 **The day** — eight hours, roughly. Its job is *execution*. The question is "what are the three things I actually do, in service of the week?" Everything else is admin or reactive — handled, but not the point of the day.
 
+Focus Mode One assigns a short ritual to each horizon: **Focus Future** (~15 min, once every 90 days), the **Weekly Launch Pad** (~5 min, Mondays), and the **Daily Planning Ritual** (~3 min, mornings). Each ritual takes what the previous horizon decided and pulls it forward — so the link is built for you, not by you.
+
 ## Why does a single horizon never work?
 
 Working only at the day level produces busy weeks that don't accumulate. You can finish thirty tasks every day for a month and arrive nowhere — because the unit of planning was a task, and tasks don't have direction in them.
@@ -40,9 +42,9 @@ The three horizons exist to close that gap deliberately. The quarter holds inten
 
 ## How do the horizons connect in practice?
 
-Every daily item should answer to a weekly slot. Every weekly slot should answer to the quarter. The chain isn't a forced bureaucracy — it's a check. When you sit down on Monday, the question is concrete: which three to six things this week move the quarter? When you sit down at 8am, the question is concrete: which three things today move the week?
+Every daily item should answer to a weekly slot. Every weekly slot should answer to the quarter. Inside Focus Mode One this chain has a name: **the Cascade**. It's not a forced bureaucracy — it's a check. When you sit down on Monday, the question is concrete: which three to six things this week move the quarter? When you sit down at 8am, the question is concrete: which three things today move the week?
 
-When a chain breaks — a day item with no week parent, a week with no quarter — the gap is visible. That's the value. You can choose to keep the orphan task (some are necessary), but you do it knowing it's an orphan, not by accident.
+When a link in the Cascade breaks — a day item with no week parent, a week with no quarter — the gap is visible. That's the value. You can choose to keep the orphan task (some are necessary), but you do it knowing it's an orphan, not by accident.
 
 ## What's the right primary horizon?
 

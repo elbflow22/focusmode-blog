@@ -24,7 +24,7 @@ export const GET: APIRoute = async () => {
 
   lines.push('## About');
   lines.push('');
-  lines.push(`- [Focus Mode One](${ORG.url}): the app for focused planning in quarters, weeks, and days.`);
+  lines.push(`- [Focus Mode One](${ORG.url}): the quarter → week → day planning app that wires your 90-day goals to today's next 90 minutes. On iOS and Android.`);
   lines.push('');
 
   if (posts.length > 0) {

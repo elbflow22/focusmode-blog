@@ -35,7 +35,7 @@ A focus session that solves these is a different kind of tool. Not a timer with 
 
 ## What does single-task lock actually mean?
 
-In Focus Mode One, when you slide to start a focus session, the screen collapses. You see one task — the one you chose — with its notes and subtasks beneath it. No other items, no scroll, no other apps reachable without explicitly ending the session. The timer is there, but it's almost incidental.
+In Focus Mode One the mechanic has a name — **Slide-to-Start Focus Mode**. Drag the start switch, and the screen collapses to one task: the one you chose, with its notes and subtasks beneath it. No other items, no scroll, no other apps reachable without explicitly ending the session. The timer is there, but it's almost incidental.
 
 The lock isn't punitive. You can end the session at any time. The point isn't to trap yourself; it's to remove the cost of staying. The default action becomes "keep working," and the alternative requires a conscious step.
 

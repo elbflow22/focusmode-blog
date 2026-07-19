@@ -46,7 +46,9 @@ You can't have both maxed out in one app. Pick one as primary.
 
 ## Where does Focus Mode One fit on this map?
 
-Planning app. Hard cap at three quarter themes, three weekly focus areas, three daily priorities. No projects, no tags, no priority levels — those are task manager features. The job is direction: what is the quarter for, what is this week's contribution, what are today's three things.
+Planning app. Hard caps everywhere: **max 3 quarter objectives · 3 ideally / max 6 weekly focus areas · 3 big + 6 supporting daily slots**. No projects, no tags, no priority levels — those are task-manager features. The job is direction: what is the quarter for, what is this week's contribution, what are today's three things.
+
+The link between the horizons has a name: **the Cascade**. Every day slot traces back to a week focus area; every week area traces back to a quarter objective. That trace is the mechanism a task manager doesn't have.
 
 Most people who try Focus Mode One are coming from a task manager and have asked themselves "why am I always busy without moving?" That's the planning gap.
 

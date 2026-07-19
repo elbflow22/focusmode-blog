@@ -1,11 +1,11 @@
 ---
-title: "Focus Future: How to Plan a Quarter in 10 Minutes"
-description: "Quarterly planning sounds heavy but takes ten minutes when you ask the right five questions. Here's the Focus Future ritual — what each question does and why."
+title: "Focus Future: How to Plan a Quarter in 15 Minutes"
+description: "Quarterly planning sounds heavy but takes about fifteen minutes when you ask the right five questions. Here's the Focus Future ritual — what each question does and why."
 pubDate: 2026-05-16
 targetQuery: "quarterly planning template"
 fm1Angle: "Marquee wizard from the landing's Rituals section. Maps quarterly planning practice to FM1's flagship ritual, with the five questions broken down individually for citability."
-excerpt: "Quarterly planning sounds heavy but takes ten minutes when you ask the right five questions. The Focus Future ritual, broken down — what each question does, and how to keep the themes alive past week three."
-quickAnswer: "Plan a quarter in ten minutes by answering five questions: What's actually true right now? What would I regret not moving forward by the end of these thirteen weeks? Pick one to three themes. Define the visible signal that says each theme moved. Name one thing you won't do. That's the whole ritual."
+excerpt: "Quarterly planning sounds heavy but takes about fifteen minutes when you ask the right five questions. The Focus Future ritual, broken down — what each question does, and how to keep the themes alive past week three."
+quickAnswer: "Plan a quarter in about fifteen minutes by answering five questions: What's actually true right now? What would I regret not moving forward by the end of these thirteen weeks? Pick one to three themes. Define the visible signal that says each theme moved. Name one thing you won't do. That's the whole ritual."
 faqs:
   - question: "How is this different from setting New Year's resolutions?"
     answer: "Resolutions are usually annual and untracked. The quarter is short enough to commit to honestly — thirteen weeks doesn't ask you to predict yourself a year out — and long enough to ship something real. The visible-signal requirement also makes resolutions concrete in a way most people skip."
@@ -18,7 +18,7 @@ related:
   - quarterly-planning-vs-todo-lists
 ---
 
-The reason quarterly planning feels heavy is that most people imagine it as a corporate workshop. Three days off-site, sticky notes, OKR matrices, alignment exercises. For one person, it shouldn't be any of that. Ten minutes once every ninety days is enough — if you ask the right five questions.
+The reason quarterly planning feels heavy is that most people imagine it as a corporate workshop. Three days off-site, sticky notes, OKR matrices, alignment exercises. For one person, it shouldn't be any of that. Fifteen minutes once every ninety days is enough — if you ask the right five questions.
 
 Focus Future is the wizard inside Focus Mode One that walks you through those five questions. Its job isn't to do the planning for you. Its job is to remove the part that intimidates people: the blank page.
 
@@ -34,7 +34,7 @@ Focus Future is the wizard inside Focus Mode One that walks you through those fi
 
 **5. Name one thing you won't do this quarter.** This is the constraint that makes the rest real. If everything is on the table, nothing is a priority. Picking what to drop sharpens what's left.
 
-That's it. Five answers. Ten minutes. The wizard saves them; the rest of the app refers back to them.
+That's it. Five answers. About fifteen minutes. The wizard saves them; the rest of the app refers back to them.
 
 ## How do you keep the themes alive past week three?
 
@@ -47,7 +47,7 @@ If you skip both, themes die. They always die.
 
 ## What if your situation changes mid-quarter?
 
-Adjust the themes. Quarterly planning isn't a contract. The quarter is a useful cycle — long enough to ship something real, short enough that a wrong call doesn't cost you a year. If the world changed and the theme is wrong, change the theme. The wizard takes ten minutes.
+Adjust the themes. Quarterly planning isn't a contract. The quarter is a useful cycle — long enough to ship something real, short enough that a wrong call doesn't cost you a year. If the world changed and the theme is wrong, change the theme. The wizard takes fifteen minutes.
 
 ## How is this different from OKRs?
 
