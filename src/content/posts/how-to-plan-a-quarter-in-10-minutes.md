@@ -1,11 +1,11 @@
 ---
 title: "Focus Future: How to Plan a Quarter in 15 Minutes"
-description: "Quarterly planning sounds heavy but takes about fifteen minutes when you ask the right five questions. Here's the Focus Future ritual — what each question does and why."
+description: "Quarterly planning sounds heavy but takes about fifteen minutes when you ask the right six questions. Here's the Focus Future ritual — what each step does and why."
 pubDate: 2026-05-16
 targetQuery: "quarterly planning template"
-fm1Angle: "Marquee wizard from the landing's Rituals section. Maps quarterly planning practice to FM1's flagship ritual, with the five questions broken down individually for citability."
-excerpt: "Quarterly planning sounds heavy but takes about fifteen minutes when you ask the right five questions. The Focus Future ritual, broken down — what each question does, and how to keep the themes alive past week three."
-quickAnswer: "Plan a quarter in about fifteen minutes by answering five questions: What's actually true right now? What would I regret not moving forward by the end of these thirteen weeks? Pick one to three themes. Define the visible signal that says each theme moved. Name one thing you won't do. That's the whole ritual."
+fm1Angle: "Marquee wizard from the landing's Rituals section. Maps quarterly planning practice to FM1's flagship ritual, with the six steps broken down individually for citability."
+excerpt: "Quarterly planning sounds heavy but takes about fifteen minutes when you ask the right six questions. The Focus Future ritual, broken down — what each step does, and how to keep the themes alive past week three."
+quickAnswer: "Plan a quarter in about fifteen minutes by answering six questions: what did you accomplish last quarter; what does your behaviour say you valued; where are you gaining momentum; what one-to-three outcomes will you commit to; what's most likely to get in your way; and what's your first concrete step this week. That's the whole ritual."
 faqs:
   - question: "How is this different from setting New Year's resolutions?"
     answer: "Resolutions are usually annual and untracked. The quarter is short enough to commit to honestly — thirteen weeks doesn't ask you to predict yourself a year out — and long enough to ship something real. The visible-signal requirement also makes resolutions concrete in a way most people skip."
@@ -18,23 +18,25 @@ related:
   - quarterly-planning-vs-todo-lists
 ---
 
-The reason quarterly planning feels heavy is that most people imagine it as a corporate workshop. Three days off-site, sticky notes, OKR matrices, alignment exercises. For one person, it shouldn't be any of that. Fifteen minutes once every ninety days is enough — if you ask the right five questions.
+The reason quarterly planning feels heavy is that most people imagine it as a corporate workshop. Three days off-site, sticky notes, OKR matrices, alignment exercises. For one person, it shouldn't be any of that. Fifteen minutes once every ninety days is enough — if you ask the right six questions.
 
-Focus Future is the wizard inside Focus Mode One that walks you through those five questions. Its job isn't to do the planning for you. Its job is to remove the part that intimidates people: the blank page.
+Focus Future is the wizard inside Focus Mode One that walks you through those six. Its job isn't to do the planning for you. Its job is to remove the part that intimidates people: the blank page.
 
-## What are the five Focus Future questions?
+## What are the six Focus Future questions?
 
-**1. What's actually true right now?** A one-paragraph honest snapshot. What's working, what's broken, what changed in the last quarter. The point isn't to solve anything — it's to stop pretending things are different than they are.
+**1. Reflect.** *What did you accomplish in the last 90 days that makes you genuinely proud?* Not a highlight reel — an honest inventory. Personal, professional, small, big; all count. You need a real starting point before you can pick a real next step.
 
-**2. What would I regret not moving forward by the end of these thirteen weeks?** This is the leverage question. Not "what could I do?" — what could be done is infinite — but "what would I regret leaving still." Direction is sharpest when filtered through future regret.
+**2. Values check.** *Looking at how you spent your time last quarter — what does your behaviour say you actually valued?* This is the hard one. Not what you'd like to have valued. What a stranger observing your calendar would conclude was your priority. Aspirational planning always fails against actual behaviour; better to name the behaviour first.
 
-**3. Pick one to three themes.** Themes, not goals. A theme is a beam of attention — a few words that decide what your weeks are about. "Ship v1 of the app." "Rebuild my sleep." "Hire a designer." The cap is three because three is the most a person can hold honestly. Two is usually right. One is fine.
+**3. Momentum.** *Where are you already gaining momentum that deserves more focus next quarter?* Existing lifts, not new efforts you have to manufacture. Protecting and expanding what's already working beats starting from cold every time.
 
-**4. Define the visible signal that says each theme moved.** Not a percentage, not an OKR-style key result. A real-world artifact. "v1 is live on the App Store." "I sleep seven-plus hours, four nights a week." "There's a contract signed with a designer." The signal lets you know later whether the quarter happened.
+**4. Objectives.** *What are the one to three outcomes you're committing to for the quarter?* This is the commitment. Themes, not tasks. "Ship v1 of the app." "Rebuild my sleep." "Hire a designer." The cap is three because three is the most a person can hold honestly. Two is usually right. One is fine.
 
-**5. Name one thing you won't do this quarter.** This is the constraint that makes the rest real. If everything is on the table, nothing is a priority. Picking what to drop sharpens what's left.
+**5. Obstacles.** *What's most likely to get in your way — external and internal?* External constraints (a heavy project, a move, a health thing). Internal patterns (procrastination, perfectionism, avoidance). Named obstacles are easier to route around than unnamed ones.
 
-That's it. Five answers. About fifteen minutes. The wizard saves them; the rest of the app refers back to them.
+**6. Commit.** *What's the single most important first step you'll take this week — and when exactly?* Not "start on it sometime." A concrete first action, on a specific day, at a specific time. That first step is what turns a quarterly plan from an intention into motion.
+
+That's it. Six answers. About fifteen minutes. The wizard saves them; the rest of the app refers back to them.
 
 ## How do you keep the themes alive past week three?
 
